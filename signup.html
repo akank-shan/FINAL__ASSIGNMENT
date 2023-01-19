@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initialscale=1.0">
+    <title>TensorIot</title>
+    <link rel="StyleSheet" href="style.css">
+    <script src="https://kit.fontawesome.com/48be085bc0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    </script>
+
+    <div class="container">
+        <div class="form-box animate">
+
+            <form>
+
+                <div class="input-group">
+
+                    <div class="heading">
+                        <h2 id="title" style="padding: 8px 8px;">Register</h2>
+                    </div>
+
+
+                    <div class="disPic">
+                        <div class="userIcontainer">
+                            <img src="userimg.png" class="userImg" width="70px" ; height="70px" />
+                        </div>
+                        <div class="disPicContent">
+                            Set Display Picture
+                        </div>
+                    </div>
+
+
+                    <!-- EMAIL-ID -->
+
+                    <div class="input-field email-input" id="emailField">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div class="cont">
+                            <input id="login_input" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                type="email" placeholder="Email">
+                        </div>
+                        <div id="loginErrBox" style="display: none;">
+                            <span id="loginErr">Enter Valid email</span>
+                        </div>
+                    </div>
+
+
+                    <!-- PASSWORD -->
+
+                    <div class="input-field" id="pswdField">
+                        <i class="fa-solid fa-unlock"></i>
+                        <div class="cont">
+                            <input id="pswd_input" name="Password" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                type="password" placeholder="Password">
+                        </div>
+                        <div id="pswBox" style="display: none;">
+                            <span id="pswdErr">Enter Valid Password</span>
+                        </div>
+                    </div>
+
+
+                    <!-- CONFIRM PASSWORD -->
+
+                    <div class="input-field" id="cpswdField">
+                        <i class="fa-solid fa-lock"></i>
+                        <div class="cont">
+                            <input id="cpswd_input" name="Confirm Password"
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" type="password"
+                                placeholder="Confirm Password" required>
+                        </div>
+                        <div id="cpswBox" style="display: none;">
+                            <span id="cpswdErr">Password Doesn't Match</span>
+                        </div>
+                    </div>
+
+
+                    <!-- USER NAME -->
+
+                    <div class="input-field" id="userField">
+                        <i class="fa-solid fa-user"></i>
+                        <div class="cont">
+                            <input id="user_input" name="text" type="text" placeholder="User Name">
+                        </div>
+                        <div id="userBox" style="display: none;">
+                            <span id="userErr">Username should be greater than 3 characters</span>
+                        </div>
+                    </div>
+
+
+                    <!-- A SHORT BIO -->
+
+                    <div class="input-field" id="bioField">
+                        <i class="fa-brands fa-wpforms"></i>
+                        <div class="cont">
+                            <input id="bio_input" type="text" placeholder="A short bio">
+                        </div>
+                        <div id="bioBox" style="display: none;">
+                            <span id="bioErr">Bio should be greater than 20 characters</span>
+                        </div>
+                    </div><br><br><br>
+
+                </div>
+
+
+                <!-- SIGNUP BUTTON -->
+
+                <div class="btn-wrap">
+                    <div class="btn1-field">
+                        <button type="button" id="signupBtn" onclick="redirect()">SIGNUP</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+        <script src="signup.js"></script>
+</body>
+
+</html>

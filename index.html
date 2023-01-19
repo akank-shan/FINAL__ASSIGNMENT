@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initialscale=5">
+    <title>TensorIot</title>
+    <link rel="StyleSheet" href="style.css">
+    <script src="https://kit.fontawesome.com/48be085bc0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="form-box animate">
+
+            <form class="login_form" name="myForm" onsubmit="return ValidateEmai()" method="post">
+
+                <div class="input-group input-container">
+
+                    <div class="heading">
+                        <h1 id="title" style="padding: 8px 8px;">Login to your app</h1>
+                    </div><br>
+
+
+                    <!-- EMAIL-ID -->
+                    
+                    <div class="input-field" id="emailField">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div class="cont">
+                            <input id="login_input" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                type="email" placeholder="Email">
+                        </div>
+                        <div id="loginErrBox" style="display: none;">
+                            <span id="loginErr">Enter Valid email</span>
+                        </div>
+                    </div>
+
+
+                    <!-- PASSWORD -->
+
+                    <div class="input-field" id="pswdField">
+                        <i class="fa-solid fa-lock"></i>
+                        <div class="cont">
+                            <input id="pswd_input" name="Password" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                type="password" placeholder="Password">
+                        </div>
+                        <div id="pswBox" style="display: none;">
+                            <span id="pswdErr">Enter Valid Password</span>
+                        </div>
+                    </div> <br><br>
+
+
+                    <!-- BUTTONS -->
+
+                    <div class="btn-field">
+                        <button type="button" id="loginBtn" onclick="redirect()">LOG IN</button><br>
+                    </div>
+
+                    <div class="or">
+                        <p>OR</p>
+                    </div>
+
+                    <div class="btn-field">
+                        <button type="button" id="signupBtn" onclick="window.location.href='signup.html';">SIGN
+                            UP</button>
+                    </div>
+
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="new.js"></script>
+
+</body>
+
+</html>
